@@ -1,4 +1,4 @@
-<!-- DATA REVIEW -->
+<!-- CLASS REVIEW -->
 <!-- MEMBUAT INSTANCE BERDASARKAN REVIEW -->
 <?php 
 require_once('data.php');
