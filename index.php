@@ -1,5 +1,5 @@
-<!-- CLASS REVIEW -->
-<!-- MEMBUAT ULASAN HALAMAN DETAIL -->
+<!-- DATA REVIEW -->
+<!-- MEMBUAT INSTANCE BERDASARKAN REVIEW -->
 <?php 
 require_once('data.php');
 require_once('menu.php');
