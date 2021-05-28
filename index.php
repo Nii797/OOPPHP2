@@ -1,4 +1,5 @@
-<!-- MENAMBAHKAN TAUTAN DAN MEMBUAT DATA DETAIL MAKANAN DAN MINUMAN -->
+<!-- KONTEN HALAMAN DETAIL -->
+<!-- MEMBUAT KONTEN UNTUK HALAMAN DETAIL -->
 <?php 
 require_once('data.php');
 require_once('menu.php');
@@ -22,8 +23,9 @@ require_once('menu.php');
           <div class="menu-item">
             <img src="<?php echo $menu->getImage() ?>" class="menu-item-image">
             <h3 class="menu-item-name">
+              <!-- NEW -->
               <!-- Bungkus code di bawah ini dengan tag <a> -->
-              <a href="show.php">
+              <a href="show.php?name=<?php echo $menu->getName() ?>">
                 <?php echo $menu->getName() ?>
               </a>
             </h3>

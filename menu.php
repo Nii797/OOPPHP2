@@ -63,5 +63,14 @@ class Menu {
   public static function getCount() {
     return self::$count;
   }
+
+  // NEW
+  // Definisikan methoc class findByName
+  public static function findByName($menus, $name) {
+    foreach ($menus as $menu) 
+    {   
+        return $menu;
+    }
+  }
 }
 ?>
