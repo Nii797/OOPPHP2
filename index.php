@@ -1,5 +1,5 @@
-<!-- KONTEN HALAMAN DETAIL -->
-<!-- MEMBUAT KONTEN UNTUK HALAMAN DETAIL -->
+<!-- CLASS REVIEW -->
+<!-- MEMBUAT ULASAN HALAMAN DETAIL -->
 <?php 
 require_once('data.php');
 require_once('menu.php');
