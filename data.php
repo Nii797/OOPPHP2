@@ -5,7 +5,7 @@
 // import file drink.php dan food.php
 require_once('drink.php');
 require_once('food.php');
-
+require_once('review.php');
 
 // warisan dari Menu child Food dan Drink
 
@@ -21,5 +21,10 @@ $pasta = new Food('PASTA',12,'img/pasta.png',3);
 $sate = new Food('SATE',6,'img/sate.png',1);
 
 $menus = array($juice, $coffee, $thaitea, $curry, $pasta, $sate);
+
+$review1 = new Review($juice->getName(),'Mantap');
+$review2 = new Review($curry->getName(),'Gurih nikmat dan sedap');
+
+$reviews = array($review1, $review2);
 
 ?>

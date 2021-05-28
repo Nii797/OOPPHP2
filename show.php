@@ -32,6 +32,17 @@ $menu = Menu::findByName($menus, $menuName);
         <?php endfor ?> 
     <?php endif ?>   
         <p class="price">Rp. <?php echo $menu->getTaxIncludedPrice() ?></p>
+  
+        <div class="review-list-wrapper">
+            <div class="review-list">
+                <div class="review-list-title">
+                    <img class="icon-review" src="" alt="">
+                </div>
+            </div>
+        </div>
+  
+  
+  
         <a href="index.php">← Kembali ke Menu</a>
     </div>
 </body>
