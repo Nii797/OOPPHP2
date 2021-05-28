@@ -36,8 +36,16 @@ $menu = Menu::findByName($menus, $menuName);
         <div class="review-list-wrapper">
             <div class="review-list">
                 <div class="review-list-title">
-                    <img class="icon-review" src="" alt="">
+                    <img class="icon-review" src="img/review.png" alt="Review">
+                    <h3>Ulasan</h3>
                 </div>
+
+                <!-- Menampilkan ulasan nama dan body di review.php -->
+                <?php foreach ($reviews as $review): ?>
+                    <h3><?php echo $review->getMenuName() ?></h3>
+                    <p><?php echo $review->getBody() ?></p>
+                <?php endforeach ?>
+
             </div>
         </div>
   
