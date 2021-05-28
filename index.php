@@ -33,7 +33,7 @@ require_once('menu.php');
               <p class="menu-item-type"><?php echo $menu->getType() ?></p>
             <?php else: ?>
               <?php for ($i=0; $i<$menu->getSpice(); $i++): ?>
-                <img src="https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/php/chilli.png" class='icon-spiciness'>
+                <img src="img/chilli.png" class='icon-spiciness'>
               <?php endfor ?>
             <?php endif ?>
             <p class="price">Rp.<?php echo $menu->getTaxIncludedPrice() ?>K (termasuk pajak)</p>

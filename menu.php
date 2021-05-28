@@ -30,10 +30,6 @@ class Menu {
     self::$count++;
   }
   
-  public function hello() {
-    echo 'Saya adalah '.$this->name;
-  }
-  
   public function getName() {
     return $this->name;
   }
@@ -69,7 +65,10 @@ class Menu {
   public static function findByName($menus, $name) {
     foreach ($menus as $menu) 
     {   
-        return $menu;
+        if($menu->getName() == $name)
+        {
+            return $menu;
+        }
     }
   }
 }
