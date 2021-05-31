@@ -51,7 +51,10 @@ $menuReviews = $menu->getReviews($reviews);
               <?php endif ?>
               <!-- NEW -->
               <!-- Cetak property name menggunakan method getter untuk $user -->
-              <p><?php echo $user->getId() ?></p>
+              
+              <!-- KTERANGAN UNTUK ID BISA DIHAPUS DAN DITAMPILKAN KEMBALI
+                   BILAMANA INGIN TAHU ID BERAPA -->
+              <!-- <p><php echo $user->getId() ></p> -->
               <p><?php echo $user->getName() ?></p>
             </div>
             <p class="review-text"><?php echo $review->getBody() ?></p>

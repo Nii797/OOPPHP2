@@ -29,7 +29,7 @@ class Review {
     {
         foreach($users as $user) {
             // if($user->getName() == $this->userName) {
-            if ($user->userId() == $this->userId) {    
+            if ($user->getId() == $this->userId) {    
                 return $user;
             }
         }
