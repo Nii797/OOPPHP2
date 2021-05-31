@@ -2,11 +2,13 @@
 // Deklasari class review
 class Review {
     private $menuName;
+    private $userName;
     private $body;
 
-    public function __construct($menuName, $body)
+    public function __construct($menuName, $userName, $body)
     {
         $this->menuName = $menuName;
+        $this->userName = $userName;
         $this->body = $body;
     }
 
@@ -18,6 +20,16 @@ class Review {
     public function getBody()
     {
         return $this->body;
+    }
+
+    // NEW
+    public function getuser($users)
+    {
+        foreach($users as $user) {
+            if($user->getName() == $this->userName) {
+                return $user;
+            }
+        }
     }
 }
 ?>

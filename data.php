@@ -1,12 +1,8 @@
 <?php
-// dihapus
-// require_once('menu.php');
 
-// import file drink.php dan food.php
 require_once('drink.php');
 require_once('food.php');
 require_once('review.php');
-// new
 require_once('user.php');
 
 $juice = new Drink('JUS',6,'img/juice.png','dingin');
@@ -26,15 +22,16 @@ $user1 = new User('Ririn','Perempuan');
 
 $users = array($user1, $user2);
 
-$review1 = new Review($juice->getName(), 'Yummy');
-$review2 = new Review($curry->getName(), 'Sangat sehat');
-$review3 = new Review($coffee->getName(), 'Wanginya harum');
-$review4 = new Review($pasta->getName(), 'Sausnya enak :)');
-$review5 = new Review($juice->getName(), 'Hanya jus jeruk biasa');
-$review6 = new Review($curry->getName(), 'Rasanya enak untuk harganya');
-$review7 = new Review($coffee->getName(), 'Kepahitannya cukup.');
-$review8 = new Review($pasta->getName(), 'Bahan yang digunakan berkualitas.');
+// NEW
+$review1 = new Review($juice->getName(), $user1->getName(), 'Yummy');
+$review2 = new Review($curry->getName(), $user2->getName(), 'Sangat sehat');
+$review3 = new Review($coffee->getName(), $user1->getName(), 'Wanginya harum');
+$review4 = new Review($pasta->getName(), $user2->getName(), 'Sausnya enak :)');
+$review5 = new Review($juice->getName(), $user1->getName(), 'Hanya jus jeruk biasa');
+$review6 = new Review($curry->getName(), $user2->getName(), 'Rasanya enak untuk harganya');
+$review7 = new Review($coffee->getName(), $user1->getName(), 'Kepahitannya cukup.');
+$review8 = new Review($pasta->getName(), $user2->getName(), 'Bahan yang digunakan berkualitas.');
 
-$reviews = array($review1, $review2);
+$reviews = array($review1, $review2, $review3, $review4, $review5, $review6, $review7, $review8);
 
 ?>
