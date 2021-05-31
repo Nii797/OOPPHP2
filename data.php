@@ -17,20 +17,20 @@ $sate = new Food('SATE',6,'img/sate.png',1);
 $menus = array($juice, $coffee, $thaitea, $curry, $pasta, $sate);
 
 // new menambahkan user
-$user1 = new User('Soni','Pria');
-$user1 = new User('Ririn','Perempuan');
+$user1 = new User('Soni','pria');
+$user2 = new User('Ririn','wanite');
 
 $users = array($user1, $user2);
 
 // NEW
-$review1 = new Review($juice->getName(), $user1->getName(), 'Yummy');
-$review2 = new Review($curry->getName(), $user2->getName(), 'Sangat sehat');
-$review3 = new Review($coffee->getName(), $user1->getName(), 'Wanginya harum');
-$review4 = new Review($pasta->getName(), $user2->getName(), 'Sausnya enak :)');
-$review5 = new Review($juice->getName(), $user1->getName(), 'Hanya jus jeruk biasa');
+$review1 = new Review($juice->getName(), $user1->getId(), 'Yummy');
+$review2 = new Review($curry->getName(), $user2->getId(), 'Sangat sehat');
+$review3 = new Review($coffee->getName(), $user1->getId(), 'Wanginya harum');
+$review4 = new Review($pasta->getName(), $user2->getId(), 'Sausnya enak :)');
+$review5 = new Review($juice->getName(), $user1->getId(), 'Hanya jus jeruk biasa');
 $review6 = new Review($curry->getName(), $user2->getName(), 'Rasanya enak untuk harganya');
-$review7 = new Review($coffee->getName(), $user1->getName(), 'Kepahitannya cukup.');
-$review8 = new Review($pasta->getName(), $user2->getName(), 'Bahan yang digunakan berkualitas.');
+$review7 = new Review($coffee->getName(), $user1->getId(), 'Kepahitannya cukup.');
+$review8 = new Review($pasta->getName(), $user2->getId(), 'Bahan yang digunakan berkualitas.');
 
 $reviews = array($review1, $review2, $review3, $review4, $review5, $review6, $review7, $review8);
 
