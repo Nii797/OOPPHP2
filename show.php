@@ -5,6 +5,9 @@ require_once('data.php');
 $menuName = $_GET['name'];
 // Panggil method finByName dari class Menu
 $menu = Menu::findByName($menus, $menuName);
+// new
+$menuReviews = $menu->getReviews($reviews);
+
 ?>
 
 <!DOCTYPE html>
@@ -40,10 +43,12 @@ $menu = Menu::findByName($menus, $menuName);
                     <h3>Ulasan</h3>
                 </div>
 
-                <!-- Menampilkan ulasan nama dan body di review.php -->
-                <?php foreach ($reviews as $review): ?>
-                    <h3><?php echo $review->getMenuName() ?></h3>
-                    <p><?php echo $review->getBody() ?></p>
+                <!-- New -->
+                <!-- Ubah $reviews menjadi $menuReviews di loop forach -->
+                <?php foreach ($menuReviews as $review): ?>
+                    <div class="review-list-item">
+                        <p><?php echo $review->getBody() ?></p>
+                    </div>
                 <?php endforeach ?>
 
             </div>

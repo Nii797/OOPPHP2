@@ -55,6 +55,18 @@ class Menu {
     return $this->getTaxIncludedPrice() * $this->orderCount;
   }
   
+  // NEW
+  // Definisikan method getRreviews
+  public function getReviews($reviews) {
+    $reviewsForMenu = array();
+    foreach($reviews as $review) {
+      if ($review->getMenuName() == $this->name){
+        $reviewsForMenu[] = $review;
+      }
+    }
+    return $reviewsForMenu;
+  }
+
   // method class yang disebut getCount
   public static function getCount() {
     return self::$count;
